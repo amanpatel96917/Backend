@@ -27,7 +27,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/Person",(req,resp)=>{
-    resp.send("Hello")
+    resp.json({"name":"Aman"})
 })
 
 app.post('/Person', async (req, res) => {
