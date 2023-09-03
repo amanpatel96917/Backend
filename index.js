@@ -26,11 +26,11 @@ const FormData = mongoose.model('FormData', {
 app.use(cors()); 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/person",(req,resp)=>{
+app.get("/",(req,resp)=>{
     resp.json({"name":"Aman"})
 })
 
-app.post('/person', async (req, res) => {
+app.post('/api/person', async (req, res) => {
     const formData = new FormData(req.body);
     try {
         await formData.save();
