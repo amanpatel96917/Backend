@@ -26,7 +26,7 @@ const FormData = mongoose.model('FormData', {
 app.use(cors()); 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/",(req,resp)=>{
+app.get("/Person",(req,resp)=>{
     resp.send("Hello")
 })
 
