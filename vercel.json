@@ -9,12 +9,12 @@
     ],
     "routes": [
         {
-            "src": "./index.js",
+            "src": "/Person",
             "methods": ["GET"],
             "dest": "/index.js"
         },
         {
-            "src": "./index.js",
+            "src": "/Person",
             "methods": ["POST"],
             "dest": "/index.js"
         }
