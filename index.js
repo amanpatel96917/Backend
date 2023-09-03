@@ -30,7 +30,7 @@ app.get("/",(req,resp)=>{
     resp.json({"name":"Aman"})
 })
 
-app.post('/api/person', async (req, res) => {
+app.post('/', async (req, res) => {
     const formData = new FormData(req.body);
     try {
         await formData.save();
